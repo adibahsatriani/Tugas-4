@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="jquery.js"></script>
+  <title>Double Klik</title>
+  <h3>Klik dua kali pada setiap kotak untuk merubah warnanya!</h3>
+  <style>
+
+  div {
+    background: yellow;
+    color: white;
+    height: 200px;
+    width: 200px;
+    border: solid 3px black;
+    float: left;
+    margin: 15px;
+ }
+
+  .dobel {
+    background: red;
+    color: black;
+  }
+
+  .dobel2 {
+    background: red;
+    color: black;
+  }
+
+  .dobel3 {
+    background:red;
+    color: black;
+  }
+
+  .dobel4 {
+    background:red;
+    color: black;
+  }
+  </style>
+</head>
+
+<body>
+ 
+<div class="kotak"></div>
+<div class="kotak2"></div>
+<div class="kotak3"></div>
+<div class="kotak4"></div>
+ 
+<script>
+var dobel = $( ".kotak" ).first();
+dobel.dblclick(function() {
+  dobel.toggleClass( "dobel" );
+});
+
+var dobel2 = $( ".kotak2" ).first();
+dobel2.dblclick(function() {
+  dobel2.toggleClass( "dobel2" );
+});
+
+var dobel3 = $( ".kotak3" ).first();
+dobel3.dblclick(function() {
+  dobel3.toggleClass( "dobel3" );
+});
+
+var dobel4 = $( ".kotak4" ).first();
+dobel4.dblclick(function() {
+  dobel4.toggleClass( "dobel4" );
+});
+</script>
+ 
+</body>
+</html>
